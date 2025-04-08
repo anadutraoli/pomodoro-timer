@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Timer</title>
+  <link rel="shortcut icon" href="./img/pomodoroLogo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="conteudo-header">
+        <div class="logo-header">
+          <img src="./img/pomodoroLogo2.svg" alt="logo Pomodoro Tiemr">
+        </div>
+        <div header-contudo>
+          <a href="#">COMO FUNCIONA?</a>
+        </div>
+      </div>
+    </header>
+    <main class="principal">
+      <div class="conteudo-principal">
+        <div class="timer">
+          <div class="modos-conteudo">
+            <button class="pomodoro-timer" onclick="pomodoroTimer()">Pomodoro</button>
+            <button class="pomodoro-timer" onclick="pomodoroTimer()">Descanso</button>
+            <button class="pomodoro-timer" onclick="pomodoroTimer()">Longo Descanso</button>
+          </div>
+          <div class="temporizador-conteudo">
+            <h2 id="tempo-temporizador">50:00</h2>
+          </div>
+          <div class="acoes-temporizador">
+            <button id="pause-btn" onclick="pauseTimer()">PAUSE</button>
+          </div>
+        </div>
+        <div class="tarefas">
+          <h1 class="tarefas-titulo">Tarefas</h1>
+          <div class="tarefas-lista">
+            <ul>
+              <li><input type="checkbox" />
+                <p>adicione a sua tarefa aqui...</p>
+                <button class="acao-tarefa">adicionar</button>
+              </li>
+              <li><input type="checkbox" />
+                <p>adicione a sua tarefa aqui...</p>
+                <button class="acao-tarefa">adicionar</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <aside>
+      <div class="lofi-conteudo">
+        <h3>Lofi</h3>
+        <p>Em desenvolvimento...</p>
+      </div>
+    </aside>
+  </div>
+  <footer class="footer-bg">
+    <div class="footer">
+      <p class="footer-conteudo">@AnaMaria. Todos os direitos reservados</p>
+    </div>
+  </footer>
+<script src="./script.js"></script>
+</body>
+
+</html>

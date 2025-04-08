@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+button {
+  font-size: 1.1rem;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.container {
+  font-family: "Poppins", sans-serif;
+  max-width: 1400px;
+  padding: 40px 60px 0px;
+  margin: 0 auto;
+  gap: 20px;
+  align-items: center;
+}
+
+.conteudo-header {
+  display: flex;
+  gap: 800px;
+  align-items: center;
+}
+
+.conteudo-principal {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 90px;
+}
+
+.timer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.modos-conteudo {
+  display: flex;
+  gap: 85px;
+  justify-content: center;
+  align-items: center;
+}
+
+.modos-conteudo button {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  padding: 10px 0px;
+}
+
+.modos-conteudo button::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: #BD1F1F;
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.modos-conteudo button:hover::after {
+  width: 100%;
+}
+
+.temporizador-conteudo {
+  display: flex;
+  margin: 0 auto;
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  border: 5px solid #BD1F1F;
+  align-items: center;
+  justify-content: center;
+}
+
+#pause-btn {
+  background-color: #BD1F1F;
+  border-radius: 15px;
+  color: #ffffff;
+}
+
+#pause-btn:hover {
+  background-color: #b81919;
+}
+
+.tarefas {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.tarefas-lista li {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.lofi-conteudo {
+  margin-top: 80px;
+  padding: 30px 0px;
+}
+
+.footer-bg {
+  background-color: #F0F0F0;
+  padding: 30px 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer {
+  font-size: 1.2rem;
+  text-align: center;
+}
