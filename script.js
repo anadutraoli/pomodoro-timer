@@ -48,6 +48,14 @@ function startTimer() {
   }, 1000);
 }
 
+function pauseTimer() {
+    if (pauseBtn.textContent == "PAUSE") {
+      clearInterval(interval)
+      pauseBtn.innerText = "CONTINUE";
+    } else if (pauseBtn.textContent == "CONTINUE") {
+      startTimer();
+    }
+}
 
 
 
